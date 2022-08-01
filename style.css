@@ -1,0 +1,81 @@
+:root{
+    --light-red: #FF6B6B;
+}
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--light-red);
+}
+
+.container{
+    width: 30%;
+    /* height: 60%; */
+    background-color: white;
+    border-radius: 0.75rem;
+}
+
+.container h1{
+    border-bottom: 1px dashed gray;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.container .contents{
+    margin: 1.5rem 1rem;
+}
+
+.contents .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contents .typing-input{
+    z-index: -999;
+    position: absolute;
+    opacity: 0;
+}
+
+.inputs input{
+    height: 57px;
+    width: 56px;
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--light-red);
+    border-radius: 00.5rem;
+    text-transform: uppercase;
+}
+
+.contents .details{
+    margin: 1rem 0.5rem;
+}
+
+.details p{
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.contents .btn-reset{
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    color: whitesmoke;
+    background-color: var(--light-red);
+    border: none;
+    border-radius: 0.5rem;
+}
